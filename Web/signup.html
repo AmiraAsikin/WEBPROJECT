@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    
+    <style>
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.wrapper{
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+.title a{
+    font-size: 40px;
+    font-weight: 800;
+    float: left;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    color: #364f6b;
+}
+
+span{
+    color: chocolate;
+}
+
+.menu{
+    float: right;
+  
+}
+
+nav{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: #ffffff;
+    z-index: 1;
+   
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+nav ul li {
+    float:left
+    
+}
+
+nav ul li a{
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+
+}
+
+nav ul li a:hover{
+    color: #05867c;
+}
+
+section{
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.column{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.column desc{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'comic sans-ms';
+    color: #364f6b;
+}
+
+h1{
+    font-family:'comic sans-ms' ;
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #364f6b;
+    width: 100%;
+    line-height: 50px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+h2{
+    color: #cc0b6c;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    font-size: 18px;
+}
+
+a.buttonpink{
+    background: #e60d79;
+    border-radius: 20px;
+    margin-top: 30px;
+    padding: 15px 20px 15px 20px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+a.buttonpink:hover{
+    background-color: #3f72af;
+}
+
+
+a.buttonblue{
+    background: #3f72af;
+    border-radius: 20px;
+    margin-top: 30px;
+    padding: 15px 20px 15px 20px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+a.buttonblue:hover{
+    background-color: #e60d79;
+}
+
+
+        /*
+        *sign up form
+        */
+        
+        form {
+            border: 3px solid #f1f1f1;
+            background-color: white;
+            padding-left: 500px;
+            padding-right: 500px;
+            padding-top: 80px;
+            padding-bottom: 35px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .cancelbtn {
+            padding: 14px 20px;
+            background-color: #f44336;
+        }
+
+        /* Float cancel and signup buttons and add an equal width */
+        .cancelbtn,
+        .loginbtn {
+            float: left;
+            width: 50%;
+        }
+
+        /* Add padding to container elements */
+        .container1 {
+            padding: 16px;
+        }
+
+        /* Clear floats */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        /* Change styles for span and cancel button on extra small screens */
+        @media screen and (max-width: 300px) {
+            span.psw {
+                display: block;
+                float: none;
+            }
+
+            .cancelbtn {
+                width: 100%;
+            }
+        }
+
+        h2 {
+            color: black;
+        }
+
+        a.navbar_button{
+    background: #e60d79;
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+a.navbar_button:hover{
+    background-color: #3f72af;
+}
+
+    </style>
+    
+</head>
+
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class=title><a href="">IT <span> Training</span> Courses</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#training">Training</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="login.html" class="navbar_button">Sign In</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <form action="signupprocess.php" method="post">
+        <h2 style="text-align: center;">Sign Up Your Account Now</h2> <br>
+        <div class="container1">
+            <label for="email"><b>Email Address</b></label>
+            <input type="text" placeholder="Enter Email Address" name="email" required>
+
+            <label for="password"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+
+            <label for="fname"><b>Full Name</b></label>
+            <input type="text" placeholder="Enter Email" name="fname" required>
+
+
+            <label for="phoneno"><b>Phone Number</b></label>
+            <input type="text" placeholder="Enter Phone Number" name="phoneno" required>
+
+
+            <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+            <div class="clearfix">
+                <button type="submit" class="btn btn-warning">Submit</button>
+				<button type="reset" class="btn btn-default">Reset</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

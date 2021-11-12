@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        /*
+    *login form
+    */
+
+        form {
+            border: 3px solid #f1f1f1;
+            background-color: white;
+            padding-left: 500px;
+            padding-right: 500px;
+            padding-top: 80px;
+            padding-bottom: 110px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .cancelbtn {
+            padding: 14px 20px;
+            background-color: #f44336;
+        }
+
+        /* Float cancel and signup buttons and add an equal width */
+        .cancelbtn,
+        .loginbtn {
+            float: left;
+            width: 50%;
+        }
+
+        /* Add padding to container elements */
+        .container1 {
+            padding: 16px;
+
+        }
+
+        /* Clear floats */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        /* Change styles for span and cancel button on extra small screens */
+        @media screen and (max-width: 300px) {
+            span.psw {
+                display: block;
+                float: none;
+            }
+
+            .cancelbtn {
+                width: 100%;
+            }
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Lucida Sans';
+            color: rgb(24, 172, 140);
+        }
+
+        h2 {
+            color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class=title><a href="">IT <span> Training</span>  Courses</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="page.html">Home</a></li>
+                    <li><a href="page.html">About Us</a></li>
+                    <li><a href="page.html">Training</a></li>
+                    <li><a href="page.html">FAQ</a></li>
+                    <li><a href="login.html" class="navbar_button">Sign In</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <form action="loginauto.php" method="post">
+        <h1>IT Training Courses</h1>
+        <h2 style="text-align: center;">Login Page</h2>
+        <div class="container1">
+            <label for="email"><b>Email Address</b></label>
+            <input type="text" placeholder="Enter Email Address" name="email" required>
+
+            <label for="password"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+
+            <div class="clearfix">
+                <button type="submit" class="loginbtn">Login</button>
+                <button type="button" class="cancelbtn">Cancel</button>
+            </div>
+            </label>
+            <br>
+            <div>
+                <p>Don't Have An Account? <a href="signup.html">Sign Up</a></p>
+            </div>
+        </div>
+    </form>
+
+
+</body>
+
+</html>
